@@ -1,0 +1,365 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: comic sans ms;
+    color: #344955;
+}
+
+/* Ukuran header */
+.wrapper {
+    width: 1400px;
+    margin: auto;
+    position: relative;
+
+}
+/* Kelas logo_a */
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family:"Audiowide", sans-serif;
+    color: #363062;
+}
+/* kelas tombol-menu ketika screen diperkecil */
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+/* kelas tombol-menu_garis */
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #F99417;
+}
+/* kelas menu ketika screen normal */
+.menu {
+    float: right;
+}
+/* navigasi atau header + garis header*/
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom:1px solid #364f6b;
+}
+/* mengatur beberapa properti terkait dengan list  */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* posisi elemen li */
+nav ul li {
+    float: left;
+}
+/* mengatur tulisan di dalam tag a */
+nav ul li a {
+    color: #363062;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 18px 0px 18px;
+    text-decoration: none;
+    font-family:"Sofia", sans-serif;
+    font-size: 20px;
+}
+/* pengaturan saat tag a di sorot oleh pengguna */
+nav ul li a:hover {
+    text-decoration: underline overline;
+}
+/* mengatur halaman section di halaman-halaman */
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+/* mengatur gambar logo ekresa di halaman home */
+.gambar-home {
+    max-width: 50%;
+    height: 25%;
+    margin-top: 200px; /* Jarak dari atas gambar */
+    margin-right: 80px; 
+}
+
+/* mengatur kolom deskripsi halaman Home */
+.kolom {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    
+}
+/* mengatur isi elemen di kolom deskripsi halaman Our CEO */
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #363062;
+}
+/* mengatur semua elemen h2 di setiap halaman */
+h2 {
+    font-family: "Sofia", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #363062;
+    width: 100%;
+    line-height: 50px;
+}
+/* pengaturan untuk semua tag h3 */
+h3 {
+    font-family: "Sofia", sans-serif;;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #363062;
+    width: 100%;
+    line-height: 50px;
+}
+/* mengatur gambar di halaman Our CEO */
+.gambar-radit {
+    max-width: 30%;
+    height: 50%;
+    margin-top: 130px;
+    margin-left: 50px; 
+}
+.gambar-radit:hover {
+    box-shadow: 0 0 500px #363062
+}
+/* pengaturan untuk kelas tombol1 */
+a.tombol1 {
+    background: #363062;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* pengaturan untuk kelas tombol1 ketika disorot oleh user */ 
+a.tombol1:hover {
+background: #F99417;
+box-shadow: 0 0 100px #F99417
+}
+/* mengatur semua margin dan padding elemen tag p */
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+/* mengatur kelas tengah : gambar dan tulisan */
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+/* pengaturan untuk foto, tulisan di halaman Our Team */
+.team-list {
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.kartu-team {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.kartu-team img {
+    width: 100%;
+    border-radius: 50%;
+}
+.kartu-team img:hover {
+    box-shadow: 0 0 50px #363062
+    }
+    .kartu-team {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .kartu-team .gambar-tim {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease; /* Efek transisi untuk filter */
+    }
+    
+    .kartu-team .tulisan {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: rgb(216, 92, 20);
+        font-size: 50px;
+        font-weight: bold;
+        transition: opacity 0.3s ease; /* Efek transisi untuk opacity */
+    }
+    
+    .kartu-team:hover .gambar-tim {
+        filter: blur(5px); /* Efek blur saat gambar disorot */
+    }
+    
+    .kartu-team:hover .tulisan {
+        opacity: 1; /* Menampilkan tulisan saat gambar disorot */
+    }
+    
+.kartu-team p {
+    font-family: "Sofia", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    color: #4D4C7D;
+}
+/* pengaturan untuk foto, tulisan di halaman Platform */
+.Platform-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-Platform {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-Platform img {
+    width: 150px;
+    border-radius: 50%;
+}
+/* margin halaman Platform */
+#Platform {
+    margin-bottom: 150px; 
+    margin-top: 10px; 
+}
+/* margin halaman contact */
+#contact {
+    background: #dedede;
+    padding:50px 0px 50px 0px;
+}
+/* pengaturan untuk footer (halaman contact */
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* pengaturan untuk footer website */
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+/* pengaturan ketika screen diperkecil agar penempatan dan ukuran elemen lebih fleksibel*/
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    /* pengaturan untuk gambar di halaman OurCEO */
+    .gambar-radit{
+        margin: 0 auto;
+        width: 100%;
+    }
+    /* pengaturan untuk gambar di halaman OurTeam */
+    .kartu-team {
+        width: 100%;
+    }
+    .kartu-team .tulisan {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: rgb(12, 11, 10);
+        font-size: 50px;
+        font-weight: bold;
+        transition: opacity 0.3s ease; /* Efek transisi untuk opacity */
+    }
+
+    .kartu-Platform {
+        width: 20%;
+    }
+    .kartu-team .tulisan{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 991.98px) {
+    .logo a {
+        display: inline;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu.active {
+        display: flex;
+    }
+    nav ul li {
+        width:100%;
+        border-bottom:1px solid #333333;
+    }
+}
+
+
